@@ -1,0 +1,8 @@
+node_modules/
+.vercel/
+.env*
+# Reportes de prácticas anteriores y archivos temporales de Word
+Reporte_Practica06_Firebase.docx
+Investigacion_Despliegue_Firebase_Vercel.*
+~$*
+docs/capturas/debug-*

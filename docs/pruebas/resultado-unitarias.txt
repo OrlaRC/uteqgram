@@ -1,0 +1,54 @@
+
+> proyecto_iawp@1.0.0 test:unit
+> node --test tests/unit.test.js
+
+TAP version 13
+# Subtest: U01 escapeHtml neutraliza etiquetas HTML (prevención de XSS)
+ok 1 - U01 escapeHtml neutraliza etiquetas HTML (prevención de XSS)
+  ---
+  duration_ms: 1.1407
+  ...
+# Subtest: U02 toSortedArray convierte el objeto de Firebase y ordena del más reciente al más antiguo
+ok 2 - U02 toSortedArray convierte el objeto de Firebase y ordena del más reciente al más antiguo
+  ---
+  duration_ms: 0.5934
+  ...
+# Subtest: U03 renderPage genera una tarjeta por publicación con el texto escapado
+ok 3 - U03 renderPage genera una tarjeta por publicación con el texto escapado
+  ---
+  duration_ms: 15.1356
+  ...
+# Subtest: U04 handler SSR responde 200 con HTML cuando Firebase responde
+ok 4 - U04 handler SSR responde 200 con HTML cuando Firebase responde
+  ---
+  duration_ms: 0.8112
+  ...
+# Subtest: U05 handler SSR responde 502 con mensaje de error si Firebase falla
+ok 5 - U05 handler SSR responde 502 con mensaje de error si Firebase falla
+  ---
+  duration_ms: 0.337
+  ...
+# Subtest: U06 manifest.json cumple los requisitos de instalación de una PWA
+ok 6 - U06 manifest.json cumple los requisitos de instalación de una PWA
+  ---
+  duration_ms: 1.244
+  ...
+# Subtest: U07 todos los archivos locales del App Shell existen en public/
+ok 7 - U07 todos los archivos locales del App Shell existen en public/
+  ---
+  duration_ms: 2.3432
+  ...
+# Subtest: U08 vercel.json publica public/, enruta /feed-ssr y desactiva la caché HTTP de sw.js
+ok 8 - U08 vercel.json publica public/, enruta /feed-ssr y desactiva la caché HTTP de sw.js
+  ---
+  duration_ms: 0.3781
+  ...
+1..8
+# tests 8
+# suites 0
+# pass 8
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 91.6104

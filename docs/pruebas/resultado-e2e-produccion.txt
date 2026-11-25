@@ -1,0 +1,80 @@
+
+> proyecto_iawp@1.0.0 test:e2e
+> node --test --test-concurrency=1 tests/e2e.test.js
+
+TAP version 13
+# Subtest: E01 Home: carga la pantalla principal y registra el Service Worker
+ok 1 - E01 Home: carga la pantalla principal y registra el Service Worker
+  ---
+  duration_ms: 3544.0565
+  ...
+# Subtest: E02 Precaching: la caché static-v11 contiene el App Shell completo
+ok 2 - E02 Precaching: la caché static-v11 contiene el App Shell completo
+  ---
+  duration_ms: 4.9546
+  ...
+# Subtest: E03 Datos remotos: el feed muestra una tarjeta por cada post de Firebase
+ok 3 - E03 Datos remotos: el feed muestra una tarjeta por cada post de Firebase
+  ---
+  duration_ms: 348.7097
+  ...
+# Subtest: E04 Datos locales: IndexedDB (posts) y localStorage guardan la información
+ok 4 - E04 Datos locales: IndexedDB (posts) y localStorage guardan la información
+  ---
+  duration_ms: 137.2345
+  ...
+# Subtest: E05 localStorage: el borrador del formulario sobrevive a una recarga
+ok 5 - E05 localStorage: el borrador del formulario sobrevive a una recarga
+  ---
+  duration_ms: 1160.0546
+  ...
+# Subtest: E06 Ayuda: la pantalla de ayuda carga y queda en la caché dinámica
+ok 6 - E06 Ayuda: la pantalla de ayuda carga y queda en la caché dinámica
+  ---
+  duration_ms: 845.5477
+  ...
+# Subtest: E07 Vista SSR: /feed-ssr llega renderizada desde el servidor (sin JavaScript)
+ok 7 - E07 Vista SSR: /feed-ssr llega renderizada desde el servidor (sin JavaScript)
+  ---
+  duration_ms: 1110.1769
+  ...
+# Subtest: E08 Offline: sin conexión la Home carga desde caché y el feed sale de IndexedDB
+ok 8 - E08 Offline: sin conexión la Home carga desde caché y el feed sale de IndexedDB
+  ---
+  duration_ms: 1085.9975
+  ...
+# Subtest: E09 Offline: la vista SSR muestra la última copia guardada
+ok 9 - E09 Offline: la vista SSR muestra la última copia guardada
+  ---
+  duration_ms: 33.8343
+  ...
+# Subtest: E10 Offline: una página nunca visitada muestra offline.html
+ok 10 - E10 Offline: una página nunca visitada muestra offline.html
+  ---
+  duration_ms: 72.4952
+  ...
+# Subtest: E11 Offline: un post creado sin conexión se guarda en IndexedDB (sync-posts)
+ok 11 - E11 Offline: un post creado sin conexión se guarda en IndexedDB (sync-posts)
+  ---
+  duration_ms: 933.0778
+  ...
+# \# Sincronización automática
+# Subtest: E12 Background Sync: al volver la conexión el post se publica en Firebase
+ok 12 - E12 Background Sync: al volver la conexión el post se publica en Firebase
+  ---
+  duration_ms: 2157.1241
+  ...
+# Subtest: E13 Instalable: Chrome no reporta errores de instalación del manifiesto
+ok 13 - E13 Instalable: Chrome no reporta errores de instalación del manifiesto
+  ---
+  duration_ms: 1.8094
+  ...
+1..13
+# tests 13
+# suites 0
+# pass 13
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 12175.9023

@@ -1,0 +1,22 @@
+.text-center {
+  text-align: center;
+}
+
+.drawer-option {
+  padding: 16px;
+}
+.offline-banner {
+  display: none;
+  background: #ff9800;
+  color: #212121;
+  text-align: center;
+  padding: 8px 16px;
+  font-weight: 700;
+}
+
+.feed-meta,
+.ssr-meta {
+  color: #757575;
+  font-size: 13px;
+  margin: 0 16px 8px;
+}
