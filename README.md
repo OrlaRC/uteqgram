@@ -4,7 +4,8 @@ PWA para que la comunidad de la Universidad Tecnológica de Querétaro (UTEQ) co
 (título + ubicación) en un feed común. Funciona sin conexión, se puede instalar en el dispositivo y
 sincroniza en segundo plano las publicaciones creadas sin internet.
 
-**Aplicación publicada:** https://uteqgram-delta.vercel.app
+**Aplicación publicada:** https://uteqgram-delta.vercel.app  
+**Repositorio:** https://github.com/OrlaRC/uteqgram  
 **Documento técnico:** [`docs/Documento_Tecnico_UTEQGram.docx`](docs/Documento_Tecnico_UTEQGram.docx)
 
 ## Pantallas
